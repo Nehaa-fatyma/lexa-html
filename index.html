@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lexa - Legal AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+  <!-- Centered Navbar with border -->
+  <header class="navbar-container">
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="logo">Lexa</div>
+    <nav class="nav-links" id="navMenu">
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#subscribe" class="subscribe">
+        <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M12 2l2.9 6.1L22 9l-5 4.9L18 22l-6-3.1L6 22l1-8.1L2 9l7.1-0.9L12 2z" />
+        </svg>
+        Subscribe
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1 class="hero-heading">
+        Contracts, agreements, and <br />
+        compliance – done right, without a <br />
+        law degree.
+      </h1>
+
+      <div class="hero-box">
+        <div class="arrow">
+          <svg viewBox="0 0 24 24" width="60" height="35" fill="none" stroke="#ffffff" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+
+        <div class="welcome-box">
+          <h2>Welcome.</h2>
+          <p>
+            AI-powered legal research and <br />
+            drafting tailored for the laws of <br />your region.
+          </p>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About SECTION -->
+  <section class="about-section">
+    <div class="about-wrapper">
+
+      <!-- Left Column: Text Box -->
+      <div class="about-left">
+        <div class="about-content">
+          <button class="about-btn">About us</button>
+          <h2 class="about-title">Local Laws. Smarter Tools.</h2>
+          <h1 class="about-subtitle">One Assistant.</h1>
+
+          <div class="about-box">
+            <p class="about-description">
+              Lexa is the Middle East’s first AI legal assistant, <br />
+              designed for both lawyers and businesses. It helps <br />
+              you draft contracts, analyze cases, and navigate <br />
+              local laws — faster, smarter, and in your legal <br />
+              language.
+            </p>
+            <hr class="aboutSection-hr" />
+
+            <h3 class="clients-heading">Our Clients Include:</h3>
+
+            <div class="client-buttons">
+              <button class="pill-btn">Startups</button>
+              <button class="pill-btn">Lawyers</button>
+              <button class="pill-btn">SMEs</button>
+            </div>
+
+            <button class="full-width-btn">See How It Works?</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Right Column: Rotating Ring (moved outside about-left) -->
+      <div class="about-right">
+        <div class="animated-ring">
+          <img src="Group_1218_cleanup.png" alt="Ring" class="ring-image" />
+          <div class="rotating-text">
+            <span class="word ">Intelligent</span>
+            <span class="word">Lawyers</span>
+            <span class="word">Startups</span>
+            <span class="word">Secure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section">
+    <div class="container">
+      <button class="services-btn">Services</button>
+      <h2 class="section-title">
+        Powerful Features.<br />Practical Tools. Legal Work.
+        <span>Simplified.</span>
+      </h2>
+
+      <div class="features-grid">
+        <!-- Left big box -->
+        <div class="feature-left">
+          <div class="feature-box big-box">
+            <div>
+              <div class="feature-title">
+                <img src="logo1.png" alt="Doc Icon" class="feature-icon" />
+                Smart Legal Document <br /> Builder
+              </div>
+              <p class="feature-description">
+                Draft NDAs, contracts, and more—fast, easy and organized.
+              </p>
+              <img src="Group 1165.png" alt="Document Builder" class="feature-img" />
+            </div>
+            <!-- ✅ This is your small inner box at the bottom -->
+            <div class="inner-feature-highlight">
+              <img src="logo2.png" alt="E-sign Icon" class="highlight-icon" />
+              E-signing <br /> Built-in Feature
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right column with 2 small boxes -->
+        <div class="feature-right">
+          <div class="feature-box small-box">
+            <div class="feature-title-with-icon">
+              <img src="logo3.png" alt="Knowledge Icon" class="feature-icon" />
+              <div class="feature-title">No Legal <br /> Knowledge Required</div>
+            </div>
+            <p class="feature-description">
+              Step-by-step guidance from our AI ensures you never feel lost and requires no prior legal knowledge.
+            </p>
+          </div>
+
+
+          <div class="feature-box small-box">
+            <div class="feature-title-with-icon">
+              <img src="logo4.png" alt="Templates Icon" class="feature-icon" />
+              <div class="feature-title">Auto-Filled Templates</div>
+            </div>
+
+            <p class="feature-description">
+              Add details once, let Lexa do the rest.
+            </p>
+            <img src="Group 1175.png" alt="Auto Templates" class="feature-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Line 1: Left to Right -->
+    <div class="tag-line">
+      <div class="tag-track">
+        <!-- Repeat 4 times -->
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+      </div>
+    </div>
+
+    <!-- Line 2: Right to Left -->
+    <div class="tag-line reverse">
+      <div class="tag-track">
+        <!-- Repeat 4 times -->
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+      </div>
+    </div>
+
+    <button class="contact-btn">Contact Us</button>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features-section">
+    <div class="container">
+      <button class="features-btn">Features</button>
+      <div class="featureSection-head">
+        <h2 class="featureSection-title">
+          Powerful Interface.<br />Seamless Experience.
+        </h2>
+        <h1 class="featureSection-tit">All-in-One Legal AI.</h1>
+        <p class="featureSection-para">
+          Lexa brings together cutting-edge AI and intuitive design to
+          simplify legal work. From <br />
+          contract automation to instant case insights, Lexa adapts to your
+          workflow--saving time, <br />
+          reducing errors, and enhancing legal precision.
+        </p>
+      </div>
+
+      <hr class="featureSection-hr" />
+
+      <div class="cards">
+
+        <div class="card-1">
+          <img src="img1.png" alt="Card Image" class="card-image" />
+          <div class="card-content">
+            <h3 class="card-title">Autonomous Legal Reasoning Engine</h3>
+            <p class="card-description">
+              Unlike generic AI tools, Lexa is trained on verified legal data and built to understand multi-step Legal
+              logic - enabling it to draft, interpret, and suggest clauses with contentual intelligence, not just keywords
+            </p>
+          </div>
+        </div>
+
+        <div class="card-2">
+          <img src="img2.jpg" alt="Card Image" class="card-image" />
+          <div class="card-content">
+            <h3 class="card-title">Instant Drafting of Complex Legal Documents</h3>
+            <p class="card-description">
+              From contracts and legal notices to court submissions, Lexa drafts documents within 
+              seconds based on your input — with jurisdiction-specific clauses, formatting, and 
+              legal tone pre-set.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="card-3">
+          <img src="img3.jpg" alt="Card Image" class="card-image" />
+          <div class="card-content">
+            <h3 class="card-title">Collaboration with Clients and Colleagues</h3>
+            <p class="card-description">
+              Invite clients, interns, or partners to review, comment, or edit 
+              documents — with role-based access and a full version history. Lexa helps streamline 
+              nternal workflows and client communication.
+            </p>
+          </div>
+        </div>
+
+
+       <div class="card-4">
+          <img src="img4.jpeg" alt="Card Image" class="card-image" />
+          <div class="card-content">
+            <h3 class="card-title">Secure, Searchable Legal Document Repository</h3>
+            <p class="card-description">
+              Lexa offers encrypted cloud storage with smart tagging, making it easy to securely 
+              search, organize, and instantly retrieve any legal file — whether by case, client, 
+              document type, or custom category — in seconds.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-5">
+          <img src="img5.jpg" alt="Card Image" class="card-image" />
+          <div class="card-content">
+            <h3 class="card-title">Integrated E-Signature & Document Locking</h3>
+            <p class="card-description">
+              No need to export — Lexa lets you sign documents securely within the platform, 
+              share them with clients, and track activity in real time. With document locking, 
+              you control what gets edited after approval.
+            </p>
+          </div>
+        </div>
+
+        
+      </div>
+      <button class="feature-btn">Try Lexa Now</button>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SECTION -->
+  <section class="testimonial-section" id="testimonials">
+    <div class="container">
+      <button class="testi-btn">Testimonials</button>
+      <div class="testimonialSection-head">
+        <h2 class="testimonialSection-title">Real Stories. Real Results.</h2>
+        <h1 class="testimonialSection-tit">Real Lexa.</h1>
+        <p class="testimonialSection-para">
+          Lawyers, students, and firms share how Lexa transformed their <br />
+          legal research, drafting, and productivity forever.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial__inner">
+          <div class="testimonial-slider-wrapper">
+            <div class="testimonial-slider">
+              <!-- Slide 1 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-box">
+                  <div class="testimonial-header">
+                    <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile" class="profile-img" />
+                    <div class="name-designation">
+                      <h4 class="name">John Doe</h4>
+                      <p class="designation">Manager</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider" />
+
+                  <div class="rating-section">
+                    <span class="rating-number">4.8</span>
+                    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                  </div>
+
+                  <div class="review-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Delectus optio facilis beatae.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-box">
+                  <div class="testimonial-header">
+                    <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile" class="profile-img" />
+                    <div class="name-designation">
+                      <h4 class="name">Sarah Ali</h4>
+                      <p class="designation">CEO</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider" />
+
+                  <div class="rating-section">
+                    <span class="rating-number">4.9</span>
+                    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                  </div>
+
+                  <div class="review-text">
+                    <p>
+                      Excellent platform for legal work. It made my workflow
+                      much faster and easier.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-box">
+                  <div class="testimonial-header">
+                    <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile" class="profile-img" />
+                    <div class="name-designation">
+                      <h4 class="name">Ali Khan</h4>
+                      <p class="designation">Legal Advisor</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider" />
+
+                  <div class="rating-section">
+                    <span class="rating-number">5.0</span>
+                    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                  </div>
+
+                  <div class="review-text">
+                    <p>
+                      Lexa helped our firm streamline contract drafting with
+                      impressive precision.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-box">
+                  <div class="testimonial-header">
+                    <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile" class="profile-img" />
+                    <div class="name-designation">
+                      <h4 class="name">Sarah Ali</h4>
+                      <p class="designation">CEO</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider" />
+
+                  <div class="rating-section">
+                    <span class="rating-number">4.9</span>
+                    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                  </div>
+
+                  <div class="review-text">
+                    <p>
+                      Excellent platform for legal work. It made my workflow
+                      much faster and easier.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-box">
+                  <div class="testimonial-header">
+                    <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile" class="profile-img" />
+                    <div class="name-designation">
+                      <h4 class="name">Sarah Ali</h4>
+                      <p class="designation">CEO</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider" />
+
+                  <div class="rating-section">
+                    <span class="rating-number">4.9</span>
+                    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                  </div>
+
+                  <div class="review-text">
+                    <p>
+                      Excellent platform for legal work. It made my workflow
+                      much faster and easier.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-box">
+                  <div class="testimonial-header">
+                    <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile" class="profile-img" />
+                    <div class="name-designation">
+                      <h4 class="name">Sarah Ali</h4>
+                      <p class="designation">CEO</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider" />
+
+                  <div class="rating-section">
+                    <span class="rating-number">4.9</span>
+                    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                  </div>
+
+                  <div class="review-text">
+                    <p>
+                      Excellent platform for legal work. It made my workflow
+                      much faster and easier.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <section class="footer-section" id="footer">
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">LEXA</div>
+          <p class="footer-description">
+            Your smart legal assistant designed <br />
+            to simplify contracts, cases, and <br />
+            compliance with region-specific<br />
+            intelligence. Powered by AI, trusted <br />
+            by professionals.
+          </p>
+          <p class="footer-bottom-left">© 2025 Lexa. All rights reserved.</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li><i class="fas fa-envelope"></i>Email: contact@lexa.ai</li>
+              <li><i class="fas fa-phone"></i>Phone: +971-1234-5678</li>
+              <li><i class="fas fa-map-marker-alt"></i>Dubai, UAE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick Carousel JS and CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".testimonial-slider").slick({
+        autoplay: true,
+        autoplaySpeed: 0, // No delay between scrolls
+        speed: 5000, // Slow scroll speed
+        cssEase: "linear", // Smooth linear scroll
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    });
+  </script>
+
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("show");
+  }
+</script>
+
+
+
+</body>
+
+</html>
