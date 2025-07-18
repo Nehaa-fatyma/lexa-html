@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,23 +16,21 @@
 <body>
   <!-- Centered Navbar with border -->
   <header class="navbar-container">
-  <div class="navbar">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="logo">Lexa</div>
-    <nav class="nav-links" id="navMenu">
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#features">Features</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#subscribe" class="subscribe">
-        <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
-          <path d="M12 2l2.9 6.1L22 9l-5 4.9L18 22l-6-3.1L6 22l1-8.1L2 9l7.1-0.9L12 2z" />
-        </svg>
-        Subscribe
-      </a>
-    </nav>
-  </div>
-</header>
+    <div class="navbar">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="logo">Lexa</div>
+      <nav class="nav-links" id="navMenu">
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#subscribe" class="subscribe">
+          <img src="navstar.png" alt="Card Image" class="navimg" />
+          Subscribe
+        </a>
+      </nav>
+    </div>
+  </header>
 
 
   <!-- HERO SECTION -->
@@ -119,7 +116,10 @@
   <!-- SERVICES SECTION -->
   <section class="services-section">
     <div class="container">
-      <button class="services-btn">Services</button>
+      <button class="services-btn">
+        <img src="dot1.png" alt="dot" class="dot-icon-img" />
+        Services
+      </button>
       <h2 class="section-title">
         Powerful Features.<br />Practical Tools. Legal Work.
         <span>Simplified.</span>
@@ -179,22 +179,19 @@
     <!-- Line 1: Left to Right -->
     <div class="tag-line">
       <div class="tag-track">
-        <!-- Repeat 4 times -->
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <img src="Slider 3.png" alt="Slider 3" class="tag-image">
+        <img src="Slider 3.png" alt="Slider 3" class="tag-image">
+        <img src="Slider 3.png" alt="Slider 3" class="tag-image">
+
       </div>
     </div>
 
     <!-- Line 2: Right to Left -->
     <div class="tag-line reverse">
       <div class="tag-track">
-        <!-- Repeat 4 times -->
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
-        <span>Summarizer</span><span>DocScanner</span><span>CaseFinder</span><span>LegalBot</span><span>Auto-Draft</span><span>SmartTemplates</span><span>AutoBill</span><span>RiskAlert</span><span>TimeTrack</span><span>LegalCalendar</span><span>eSign</span>
+        <img src="Slider 4.png" alt="Slider 4" class="tag2-image">
+        <img src="Slider 4.png" alt="Slider 4" class="tag2-image">
+        <img src="Slider 4.png" alt="Slider 4" class="tag2-image">
       </div>
     </div>
 
@@ -205,22 +202,43 @@
   <!-- FEATURES SECTION -->
   <section class="features-section">
     <div class="container">
-      <button class="features-btn">Features</button>
-      <div class="featureSection-head">
-        <h2 class="featureSection-title">
-          Powerful Interface.<br />Seamless Experience.
-        </h2>
-        <h1 class="featureSection-tit">All-in-One Legal AI.</h1>
-        <p class="featureSection-para">
-          Lexa brings together cutting-edge AI and intuitive design to
-          simplify legal work. From <br />
-          contract automation to instant case insights, Lexa adapts to your
-          workflow--saving time, <br />
-          reducing errors, and enhancing legal precision.
-        </p>
-      </div>
+      <div class="sticky-feature-header">
+        <button class="features-btn" style="padding-top: 1rem;">Features</button>
+        <div class="featureSection-head">
+          <h2 class="featureSection-title">
+            Powerful Interface.<br />Seamless Experience.
+          </h2>
+          <h1 class="featureSection-tit">All-in-One Legal AI.</h1>
+          <p class="featureSection-para">
+            Lexa brings together cutting-edge AI and intuitive design to
+            simplify legal work. From <br />
+            contract automation to instant case insights, Lexa adapts to your
+            workflow--saving time, <br />
+            reducing errors, and enhancing legal precision.
+          </p>
+        </div>
+        <!-- Putting inline styles here, for ease of use. -->
+        <style>
+          .sticky-feature-header {
+            /* Replace .your-sticky-element with the actual class or ID of your div */
+            position: sticky;
+            top: 0rem;
+            /* Default for mobile */
+            background: #a9a9a9;
+          }
 
-      <hr class="featureSection-hr" />
+          /* Media query for desktop */
+          @media (min-width: 768px) {
+
+            /* You can adjust this breakpoint as needed */
+            .sticky-feature-header {
+              top: 0rem;
+              /* For desktop */
+            }
+          }
+        </style>
+        <hr class="featureSection-hr" />
+      </div>
 
       <div class="cards">
 
@@ -230,7 +248,8 @@
             <h3 class="card-title">Autonomous Legal Reasoning Engine</h3>
             <p class="card-description">
               Unlike generic AI tools, Lexa is trained on verified legal data and built to understand multi-step Legal
-              logic - enabling it to draft, interpret, and suggest clauses with contentual intelligence, not just keywords
+              logic - enabling it to draft, interpret, and suggest clauses with contentual intelligence, not just
+              keywords
             </p>
           </div>
         </div>
@@ -240,8 +259,8 @@
           <div class="card-content">
             <h3 class="card-title">Instant Drafting of Complex Legal Documents</h3>
             <p class="card-description">
-              From contracts and legal notices to court submissions, Lexa drafts documents within 
-              seconds based on your input — with jurisdiction-specific clauses, formatting, and 
+              From contracts and legal notices to court submissions, Lexa drafts documents within
+              seconds based on your input — with jurisdiction-specific clauses, formatting, and
               legal tone pre-set.
             </p>
           </div>
@@ -253,21 +272,21 @@
           <div class="card-content">
             <h3 class="card-title">Collaboration with Clients and Colleagues</h3>
             <p class="card-description">
-              Invite clients, interns, or partners to review, comment, or edit 
-              documents — with role-based access and a full version history. Lexa helps streamline 
+              Invite clients, interns, or partners to review, comment, or edit
+              documents — with role-based access and a full version history. Lexa helps streamline
               nternal workflows and client communication.
             </p>
           </div>
         </div>
 
 
-       <div class="card-4">
+        <div class="card-4">
           <img src="img4.jpeg" alt="Card Image" class="card-image" />
           <div class="card-content">
             <h3 class="card-title">Secure, Searchable Legal Document Repository</h3>
             <p class="card-description">
-              Lexa offers encrypted cloud storage with smart tagging, making it easy to securely 
-              search, organize, and instantly retrieve any legal file — whether by case, client, 
+              Lexa offers encrypted cloud storage with smart tagging, making it easy to securely
+              search, organize, and instantly retrieve any legal file — whether by case, client,
               document type, or custom category — in seconds.
             </p>
           </div>
@@ -278,14 +297,14 @@
           <div class="card-content">
             <h3 class="card-title">Integrated E-Signature & Document Locking</h3>
             <p class="card-description">
-              No need to export — Lexa lets you sign documents securely within the platform, 
-              share them with clients, and track activity in real time. With document locking, 
+              No need to export — Lexa lets you sign documents securely within the platform,
+              share them with clients, and track activity in real time. With document locking,
               you control what gets edited after approval.
             </p>
           </div>
         </div>
 
-        
+
       </div>
       <button class="feature-btn">Try Lexa Now</button>
     </div>
@@ -296,8 +315,6 @@
     <div class="container">
       <button class="testi-btn">Testimonials</button>
       <div class="testimonialSection-head">
-        <h2 class="testimonialSection-title">Real Stories. Real Results.</h2>
-        <h1 class="testimonialSection-tit">Real Lexa.</h1>
         <p class="testimonialSection-para">
           Lawyers, students, and firms share how Lexa transformed their <br />
           legal research, drafting, and productivity forever.
@@ -481,15 +498,17 @@
     <div class="footer">
       <div class="footer-container">
         <div class="footer-left">
-          <div class="footer-logo">LEXA</div>
+          <div class="footer-logo">Lexa</div>
           <p class="footer-description">
-            Your smart legal assistant designed <br />
-            to simplify contracts, cases, and <br />
-            compliance with region-specific<br />
-            intelligence. Powered by AI, trusted <br />
-            by professionals.
+            Lexa is your AI legal assistant—built to simplify <br />
+            legal drafting, answer queries, and assist with <br />
+            case research. <br />
+
+            Trusted by lawyers, students, and businesses <br />
+            across the region, Lexa makes legal work faster, <br />
+            smarter, and easier.
           </p>
-          <p class="footer-bottom-left">© 2025 Lexa. All rights reserved.</p>
+
         </div>
 
         <div class="footer-right">
@@ -512,6 +531,11 @@
             </ul>
           </div>
         </div>
+      </div>
+      <hr class="foot-div">
+      <p class="footer-bottom-left">©️ 2025 Lexa. All rights reserved.</p>
+      <div class="footer-social-icons">
+        <a href="#" aria-label="Facebook"><img src="icons.png" alt="Icons"></a>
       </div>
   </section>
 
@@ -555,14 +579,8 @@
   </script>
 
   <script>
-  function toggleMenu() {
-    const nav = document.getElementById("navMenu");
-    nav.classList.toggle("show");
-  }
-</script>
-
-
-
-</body>
-
-</html>
+    function toggleMenu() {
+      const nav = document.getElementById("navMenu");
+      nav.classList.toggle("show");
+    }
+  </script>

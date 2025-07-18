@@ -15,6 +15,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+
 }
 
 /* ========================
@@ -305,41 +306,45 @@ html {
     }
 
     .welcome-box {
-        clip-path: polygon(0 0, 52% 0, 101% 45%, 103% 103%, 0% 100%);
+        clip-path: polygon(0px 0px, 52% 0px, 101% 45%, 103% 103%, 0% 100%);
         position: relative;
-    }
-
-    .welcome-box::after {
-        content: "";
-        position: absolute;
-        top: 90px;
-        /* Adjusted for smaller height */
-        right: 2px;
-        width: 1.5px;
-        /* Thinner for smaller screens */
-        height: 130px;
-        /* Adjust based on box height */
-        background-color: #fff;
-        transform: rotate(131deg);
-        transform-origin: top right;
-        z-index: 2;
-    }
-
-    .welcome-box h2 {
-        font-size: 20px;
-        margin: 24px 0 20px;
-    }
-
-    .welcome-box p {
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
-
-    .welcome-box button {
-        padding: 10px 40px;
-        font-size: 13px;
+        height: 242px;
+        width: 260px;
+        margin-left: 51px;
     }
 }
+
+.welcome-box::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    /* Adjusted for smaller height */
+    right: 2px;
+    width: 1.5px;
+    /* Thinner for smaller screens */
+    height: 130px;
+    /* Adjust based on box height */
+    background-color: #fff;
+    transform: rotate(131deg);
+    transform-origin: top right;
+    z-index: 2;
+}
+
+.welcome-box h2 {
+    font-size: 20px;
+    margin: 24px 0 20px;
+}
+
+.welcome-box p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.welcome-box button {
+    padding: 10px 40px;
+    font-size: 13px;
+}
+
 
 /* ABOUT SECTION CSS */
 
@@ -371,7 +376,7 @@ html {
     gap: 60px;
     flex-wrap: wrap;
     padding: 30px 10%;
-    background-color: #a9a9a9;
+    background-color: #D9D9D9;
     border-radius: 60px;
     scroll-margin-top: 100px;
 }
@@ -469,6 +474,42 @@ html {
     transition: all 0.3s;
 }
 
+img.tag-image {
+    height: 86px;
+    margin-top: -26px;
+}
+
+img.tag2-image {
+    height: 86px;
+    margin-top: -26px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.tag-line.reverse .tag-track {
+    animation: scroll-right 40s linear infinite;
+    /* Apply reverse animation */
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+        /* Move back to original position */
+    }
+}
+
 .aboutSection-hr {
     height: 1px;
     width: 100%;
@@ -518,6 +559,15 @@ html {
 @media (max-width: 768px) {
     .about-section {
         padding: 80px 20px;
+    }
+
+    .about-btn {
+        font-size: 14px;
+        padding: 6px 20px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .about-title {
@@ -648,17 +698,32 @@ html {
 /* Services button */
 .services-btn {
     display: block;
-    margin: 40px auto 20px auto;
-    padding: 10px 30px;
+    align-items: center;
+    gap: 8px;
+    padding: 0.7rem 2rem;
     color: white;
     background-color: black;
     border: none;
-    border-radius: 39px;
+    border-radius: 25px;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
     cursor: pointer;
-    text-align: center;
     transition: all 0.3s ease;
+
+    margin: 2rem auto 42px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dot-icon-img {
+    width: 65px;
+    height: 32px;
+    object-fit: contain;
+    margin-left: -12px;
+    padding-left: 28px;
+    margin-right: 0px;
+    padding-top: 20px;
 }
 
 .section-title {
@@ -666,6 +731,7 @@ html {
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.4;
+    color: #A5A5A5;
 }
 
 .section-title span {
@@ -718,12 +784,14 @@ html {
 .big-box {
     padding: 40px;
     width: 100%;
+    background-color: #131313;
 }
 
 /* Small stacked boxes */
 .small-box {
     width: 100%;
     max-width: 400px;
+    background-color: #131313;
 }
 
 /* Titles and icons */
@@ -734,6 +802,7 @@ html {
     font-weight: 600;
     margin-bottom: 2px;
     gap: 10px;
+    color: #FFFFFF;
 }
 
 .feature-title-with-icon {
@@ -752,6 +821,7 @@ html {
 .feature-description {
     font-size: 15px;
     line-height: 1.6;
+    color: #727272;
 }
 
 .feature-img {
@@ -793,6 +863,11 @@ html {
         align-items: center;
     }
 
+    .feature-img {
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+
     .feature-left,
     .feature-right {
         max-width: 100%;
@@ -812,8 +887,10 @@ html {
     }
 
     .services-btn {
+
         font-size: 14px;
         padding: 8px 20px;
+        margin-right: 111px;
     }
 
     .feature-title {
@@ -835,49 +912,62 @@ html {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    height: 40px;
-    margin: 45px 0;
+    height: 60px;
+    margin: 45px auto;
+    max-width: 798px;
+    padding: 0 20px;
+
 }
 
 .tag-track {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll-left 40s linear infinite;
+    /* Change to flex for better image handling and spacing */
+    display: flex;
+
+    animation: scroll-left 10s linear infinite;
+    /* Will be adjusted by JS, or manually */
 }
 
+.tag-track img {
+    height: 60px;
+    /* Ensure images are sized */
+    width: auto;
+    /* Maintain aspect ratio */
+    margin: 0 15px;
+    /* Add margin between images for spacing */
+    flex-shrink: 0;
+    /* Prevent images from shrinking within the flex container */
+}
+
+/* For the second line, reverse animation */
 .tag-line.reverse .tag-track {
-    animation: scroll-right 40s linear infinite;
+    animation: scroll-right 10s linear infinite;
 }
 
-.tag-track span {
-    display: inline-block;
-    padding: 0 24px;
-    font-size: 16px;
-    color: white;
-    border: 2px solid white;
-    border-radius: 22px;
-    margin-left: 10px;
-}
 
-/* Left to Right */
+/* Left to Right (moves content to the left) */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
     }
 
     100% {
+
         transform: translateX(-50%);
+        /* Moves left by half the total track width */
     }
 }
 
-/* Right to Left */
+/* Right to Left (moves content to the right) */
 @keyframes scroll-right {
     0% {
-        transform: translateX(0);
+
+        transform: translateX(-50%);
+        /* Start at left offset */
     }
 
     100% {
-        transform: translateX(50%);
+        transform: translateX(0);
+        /* Move back to original position (i.e., right) */
     }
 }
 
@@ -942,7 +1032,7 @@ html {
 @media (max-width: 480px) {
     .features-btn {
         font-size: 13px;
-        padding: 7px 20px;
+        padding: 14px 20px;
     }
 }
 
@@ -1080,6 +1170,7 @@ p.featureSection-para {
     .card-4 {
         width: 100%;
         max-width: 100%;
+        background-color: #B5B2B2;
     }
 
     h2.featureSection-title {
@@ -1121,7 +1212,8 @@ p.featureSection-para {
 
 /* ===== Testimonial Container ===== */
 .testimonial-section {
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+    background-color: #131313;
     border-radius: 60px;
     padding: 40px 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -1160,25 +1252,46 @@ h1.testimonialSection-tit {
 p.testimonialSection-para {
     margin-top: 21px;
     font-size: 15px;
+    color: #727272;
+
 }
 
 .testimonial-slider-wrapper {
     position: relative;
     overflow: hidden;
-    width: 900px;
-    margin-left: 190px;
-    /* padding: 14px 191px; */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .testimonial-slider {
     /* width: 100%; */
     display: flex !important;
     justify-content: center;
-    padding: 12px 8px;
-    /* Top-Bottom added here */
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* For smoother scrolling on iOS */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for Internet Explorer and Edge */
+    padding: 0 50px;
+    /* IMPORTANT: This padding creates space for the blur effect.
+                      It should match the 'width' of your pseudo-elements. */
+    /* padding: 12px 8px; */
     box-sizing: border-box;
-    margin-right: 99px;
+    margin-right: 45px;
+    margin-left: 45px;
+    gap: 30px;
+    /* Space between testimonial slides (modern alternative to margin-right on slides) */
+
 }
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.testimonial-slider::-webkit-scrollbar {
+    display: none;
+}
+
 
 .testimonial-slider .slick-track {
     /* display: flex;
@@ -1192,7 +1305,18 @@ p.testimonialSection-para {
     justify-content: center;
     box-sizing: border-box;
     padding: 0 12px;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    gap: 30px;
+    width: 350px;
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+
 }
+
 
 /* ========== Responsive ========== */
 @media (max-width: 1200px) {
@@ -1257,48 +1381,73 @@ p.testimonialSection-para {
 
 /* ===== Testimonial Box ===== */
 .testimonial-box {
-    width: 100%;
-    max-width: 320px;
-    min-height: 242px;
-    padding: 16px;
-    background-color: #0000006e;
-    border-radius: 15px;
-    box-shadow: 1px -2px 10px rgba(152, 152, 152, 1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+    element.style {}
+
+    @media (max-width: 991px) {
+        .testimonial-box {
+            max-width: 280px;
+            padding: 14px;
+        }
+    }
+
+    .testimonial-box {
+        width: 100%;
+        max-width: 320px;
+        min-height: 242px;
+        padding: 16px;
+        background-color: #131313;
+        border-radius: 15px;
+        box-shadow: 2px 0px 10px rgb(13, 0, 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: space-between;
+    }
 }
 
 /* ===== Testimonial Content ===== */
 .testimonial-header {
     display: flex;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
+    margin-bottom: 15px;
+
 }
 
 .profile-img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid #555;
     object-fit: cover;
+    margin-right: 15px;
+
 }
 
 .name-designation .name {
-    font-size: 18px;
+    /* font-size: 18px;
     margin: 0;
+    color: #E1E1E1; */
+    font-size: 1.2em;
+    margin: 0;
+    color: #eee;
 }
 
 .name-designation .designation {
-    font-size: 14px;
+    /* font-size: 14px;
     color: #6c6c6c;
     margin: 4px 0 0;
+} */
+    font-size: 0.9em;
+    color: #bbb;
+    margin: 0;
 }
 
 .divider {
     margin: 15px 0;
     border: 0;
-    border-top: 1px solid #fcfcfc;
+    border-top: 1px solid #727272;
 }
 
 .rating-section {
@@ -1311,41 +1460,55 @@ p.testimonialSection-para {
 .rating-number {
     font-size: 18px;
     font-weight: bold;
-    color: #f4a261;
+    color: grey;
 }
 
 .stars {
     font-size: 16px;
-    color: #f4a261;
+    color: #a88313;
 }
 
 .review-text p {
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
+    color: #B2B0B0;
 }
 
 /* ===== Slider Effects (Blur) ===== */
+
+
 .testimonial-slider-wrapper::before,
 .testimonial-slider-wrapper::after {
     content: "";
     position: absolute;
     top: 0;
     width: 50px;
+    /* Width of the blurred fade area */
     height: 100%;
     z-index: 10;
+    /* Ensure this is above the slider content */
     pointer-events: none;
+    /* Allows clicks/scrolls to pass through */
+    backdrop-filter: blur(6px);
+    /* 🎯 Actual blur effect on content behind it */
+    -webkit-backdrop-filter: blur(6px);
+    /* Safari support */
 }
 
 .testimonial-slider-wrapper::before {
     left: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+    /* Gradient to match your background and fade over the blur.
+     If your testimonial section background is #1a1a1a, then this is correct. */
+    background: linear-gradient(to right, #1a1a1a, transparent);
 }
 
 .testimonial-slider-wrapper::after {
     right: 0;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+    /* Same for the right side */
+    background: linear-gradient(to left, #1a1a1a, transparent);
 }
+
 
 /* ===== Responsive Breakpoints ===== */
 @media (max-width: 991px) {
@@ -1413,10 +1576,11 @@ p.testimonialSection-para {
     }
 }
 
+
 /* FOOTER CSS */
 /* ===== Footer Section ===== */
 .footer {
-    background-color: #972222;
+    background-color: #A5A5A5;
     color: #fff;
     padding: 40px 20px 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -1429,6 +1593,7 @@ p.testimonialSection-para {
     max-width: 1200px;
     margin: 0 auto;
     gap: 40px;
+
 }
 
 .footer-left {
@@ -1439,14 +1604,14 @@ p.testimonialSection-para {
 .footer-logo {
     font-size: 40px;
     margin-bottom: 20px;
-    color: #bebebe;
+    color: #000000;
     font-weight: bolder;
 }
 
 .footer-description {
     font-size: 14px;
     line-height: 1.8;
-    color: #dddddd;
+    color: #000000;
 }
 
 .footer-right {
@@ -1466,7 +1631,7 @@ p.testimonialSection-para {
 .footer-contact h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer-links ul,
@@ -1479,7 +1644,7 @@ p.testimonialSection-para {
 .footer-links ul li,
 .footer-contact ul li {
     font-size: 14px;
-    color: #bbbbbb;
+    color: #000000;
     margin-bottom: 8px;
     display: flex;
     align-items: center;
@@ -1487,18 +1652,23 @@ p.testimonialSection-para {
 }
 
 .footer-links ul li a {
-    color: #bbbbbb;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-links ul li a:hover {
-    color: #f4a261;
+    color: #000000;
 }
 
 .footer-contact i {
-    color: #f4a261;
+    color: #000000;
     width: 16px;
+}
+
+.footer-social-icons {
+    display: flex;
+    margin-left: auto;
 }
 
 /* Footer bottom */
@@ -1507,7 +1677,7 @@ p.testimonialSection-para {
     margin-top: 40px;
     padding-top: 20px;
     font-size: 13px;
-    color: #aaa;
+    color: #000000;
     border-top: 1px solid #bbbbbb3b;
 }
 
@@ -1559,7 +1729,7 @@ p.testimonialSection-para {
 .footer-bottom-left {
     margin-top: 102px;
     font-size: 13px;
-    color: #aaa;
+    color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -1567,4 +1737,10 @@ p.testimonialSection-para {
         margin-top: 20px;
         text-align: left;
     }
+}
+
+.foot-div {
+    margin: 84px -19px -85px;
+    border: 0;
+    border-top: 1px solid #000000;
 }
